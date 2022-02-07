@@ -26,5 +26,5 @@ function loadCheck() {
 
 function uncheckAll() {
   document.querySelectorAll('input[type="checkbox"]')
-    .forEach(el => el.checked = false);
+    .forEach(el => localStorage.removeItem(el.id);
 }
