@@ -1,0 +1,146 @@
+body {
+  background-color: lavender;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  text-align: center;
+  border: solid black;
+  border-width: 80px 30px 80px 30px;
+  border-radius: 75px;
+  width: 350px;
+  padding-bottom:30px;
+  margin:50px;
+}
+
+/*frame container so it looks like a smart phone*/
+@media (max-width: 375px) {
+.container {
+  text-align: center;
+  border: none;
+  border-width: 0px 0px 0px 0px;
+  border-radius: 0px;
+  width: 350px;
+  padding-bottom:0px;
+  margin:0px;
+}}
+
+.toggle-switch {
+  position: relative;
+  /*width: 60px;*/
+  width: calc(100% / 5);
+
+  display: inline-block;
+  text-align: left;
+  top: 8px;
+  margin: 10px 5px;
+}
+.checkbox {
+  display: none;
+}
+.label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #bbb;
+  border-radius: 15px;
+}
+.inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.inner:before,
+.inner:after {
+  float: left;
+  width: 50%;
+  height: 36px;
+  padding: 0;
+  line-height: 36px;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.inner:before {
+  content: "";
+  padding-left: 10px;
+  background-color: lightgray;
+  color: #fff;
+}
+.inner:after {
+  text-align: right;
+  padding-right: 7px;
+  content: "error";
+  background-color: hotpink;
+  color: #fff;
+}
+
+
+.bread:after {
+  content: "B 1/2";
+  background-color: wheat;
+  color: black;
+}
+
+.greens:after {
+  content: "G 1/2";
+  background-color: darkkhaki;
+  color: black;
+}
+
+.meat:after {
+  content: "M";
+  background-color: darksalmon;
+  color:black;
+  padding-right: 23px;
+}
+
+.fruit:after {
+  content: "F";
+  background-color: gold;
+  color: black;
+  padding-right: 23px;
+}
+
+.caffeine:after {
+  content: "C";
+  background-color: tan;
+  color: black;
+  padding-right: 23px;
+}
+
+.oil:after {
+  content: "O";
+  background-color: olive;
+  padding-right: 23px;
+
+}
+
+.water:after {
+  content: "W";
+  background-color: cornflowerblue;
+  padding-right: 23px;
+
+}
+
+/*button*/
+.switch {
+  display: block;
+  width: 17px;
+  margin: 5px;
+  background: lavender;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 45px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.checkbox:checked + .label .inner {
+  margin-left: 0;
+}
+.checkbox:checked + .label .switch {
+  right: 0px;
+}
+

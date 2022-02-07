@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Tracker</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/ftmain.css">
+  <link rel="stylesheet" href="css/ftmain.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body onload="loadCheck()">
+<!--bread-->
+
+<div class="container">
+  <h1>Bon App&#233;tit!</h1>
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="b1" onclick="myfunction(this);">
+   <label class="label" for='b1'>
+     <span class= "bread inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="b2" onclick="myfunction(this);">
+   <label class="label" for='b2'>
+     <span class= "bread inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+    <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="b3" onclick="myfunction(this);">
+   <label class="label" for='b3'>
+     <span class= "bread inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+    <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="b4" onclick="myfunction(this);">
+   <label class="label" for='b4'>
+     <span class= "bread inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+<!--greens-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="g1" onclick="myfunction(this);">
+   <label class="label" for='g1'>
+     <span class= "greens inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+    <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="g2" onclick="myfunction(this);">
+   <label class="label" for='g2'>
+     <span class= "greens inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="g3" onclick="myfunction(this);">
+   <label class="label" for='g3'>
+     <span class= "greens inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="g4" onclick="myfunction(this);">
+   <label class="label" for='g4'>
+     <span class= "greens inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+   <!--Meat-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="m1" onclick="myfunction(this);">
+   <label class="label" for='m1'>
+     <span class= "meat inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="m2" onclick="myfunction(this);">
+   <label class="label" for='m2'>
+     <span class= "meat inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="m3" onclick="myfunction(this);">
+   <label class="label" for='m3'>
+     <span class= "meat inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+  <!--Fruit-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="f1" onclick="myfunction(this);">
+   <label class="label" for='f1'>
+     <span class= "fruit inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="f2" onclick="myfunction(this);">
+   <label class="label" for='f2'>
+     <span class= "fruit inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="f3" onclick="myfunction(this);">
+   <label class="label" for='f3'>
+     <span class= "fruit inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <!--Caffeine-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="c1" onclick="myfunction(this);">
+   <label class="label" for='c1'>
+     <span class= "caffeine inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+    <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="c2" onclick="myfunction(this);">
+   <label class="label" for='c2'>
+     <span class= "caffeine inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+    <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="c3" onclick="myfunction(this);">
+   <label class="label" for='c3'>
+     <span class= "caffeine inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+      <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="c4" onclick="myfunction(this);">
+   <label class="label" for='c4'>
+     <span class= "caffeine inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <!--Oil-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o1" onclick="myfunction(this);">
+   <label class="label" for='o1'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o2" onclick="myfunction(this);">
+   <label class="label" for='o2'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o3" onclick="myfunction(this);">
+   <label class="label" for='o3'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o4" onclick="myfunction(this);">
+   <label class="label" for='o4'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o5" onclick="myfunction(this);">
+   <label class="label" for='o5'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o6" onclick="myfunction(this);">
+   <label class="label" for='o6'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o7" onclick="myfunction(this);">
+   <label class="label" for='o7'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o8" onclick="myfunction(this);">
+   <label class="label" for='o8'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o9" onclick="myfunction(this);">
+   <label class="label" for="o9">
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="o10" onclick="myfunction(this);">
+   <label class="label" for='o10'>
+     <span class= "oil inner"></span>
+     <span class="switch" ></span>
+   </label>
+      </div>
+
+  <!--Water-->
+
+  <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w1" onclick="myfunction(this);">
+   <label class="label" for='w1'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+
+   <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w2" onclick="myfunction(this);">
+   <label class="label" for='w2'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+ <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w3" onclick="myfunction(this);">
+   <label class="label" for='w3'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+ <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w4" onclick="myfunction(this);">
+   <label class="label" for='w4'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+ <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w5" onclick="myfunction(this);">
+   <label class="label" for='w5'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+  <div class="toggle-switch">
+    <input type="checkbox" class="checkbox" id="w6" onclick="myfunction(this);">
+    <label class="label" for='w6'>
+      <span class="water inner"></span>
+      <span class="switch"></span>
+    </label>
+  </div>
+ <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w7" onclick="myfunction(this);">
+   <label class="label" for='w7'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+ <div class="toggle-switch">
+  <input type="checkbox" class="checkbox" id="w8" onclick="myfunction(this);">
+   <label class="label" for='w8'>
+     <span class= "water inner"></span>
+     <span class="switch" ></span>
+   </label>
+    </div>
+
+
+</div><!-- end contaier -->
+
+
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>-->
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/ftmain.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/ftmain.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = mm + dd + yyyy;
+    localStorage.setItem("thistime", today)
+
+    if (today !== localStorage.getItem("thistime")){
+    console.log("mismatch");
+    localStorage.getItem("thistime", today);
+    uncheckAll();
+    }
+    else
+      {console.log("match");
+      }
+
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
