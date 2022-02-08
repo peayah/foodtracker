@@ -29,6 +29,9 @@
 <div class="container">
   <h1>Bon App&#233;tit!</h1>
 
+  <div><button class="reset">Reset All</button></div>
+
+
   <div class="toggle-switch">
   <input type="checkbox" class="checkbox" id="b1" onclick="myfunction(this);">
    <label class="label" for='b1'>
@@ -346,15 +349,21 @@
     var yyyy = today.getFullYear();
     today = mm + dd + yyyy;
     localStorage.setItem("thistime", today)
+    console.log(today)
+    console.log(localStorage.getItem("thistime"))
 
     if (today !== localStorage.getItem("thistime")){
-    console.log("mismatch");
+    // console.log("mismatch");
     localStorage.getItem("thistime", today);
     uncheckAll();
     }
     else
-      {console.log("match");
+      {
+        console.log("match");
       }
+
+    document.querySelector('button').addEventListener('click', uncheckAll)
+
 
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')

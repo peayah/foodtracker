@@ -19,12 +19,19 @@ function loadCheck() {
   list.forEach(el => {
     if (localStorage.getItem(el.id) === "true") {
       document.getElementById(el.id).checked = true
-      console.log("this should work")
+      // console.log("this should work")
     }
   })
 }
 
 function uncheckAll() {
   document.querySelectorAll('input[type="checkbox"]')
-    .forEach(el => localStorage.removeItem(el.id);
+.forEach(el => el.checked = false);
 }
+
+function resetAll() {
+  document.querySelectorAll('input[type="checkbox"]')
+    .forEach(el => localStorage.removeItem(el.id));
+}
+
+

@@ -144,3 +144,14 @@ body {
   right: 0px;
 }
 
+.reset {
+  background-color: lavender;
+  border: 2px solid cornflowerblue;
+  color: black;
+  width: 33%;
+  font-size: 15px ;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
