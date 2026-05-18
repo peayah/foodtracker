@@ -17,10 +17,9 @@ O - Oil in tbsp.
 
 W - Water
 
-To change the number of the different food groups one would change for
+To change the number of the different food groups, you'd change for
 example, the "b1" in both id='b1' and for='b1', so that the id is unique
-for
-each input / label tag:
+for each input / label tag:
 
 ```
 <div class="toggle-switch">
